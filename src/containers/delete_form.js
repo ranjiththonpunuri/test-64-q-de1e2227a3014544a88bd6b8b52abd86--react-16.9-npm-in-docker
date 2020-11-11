@@ -13,7 +13,7 @@ class DeleteForm extends React.Component{
                   <button className='cancel' onClick={()=>this.props.openDeletePopup(null)}>Cancel</button>
                 </div>
                 <div className='lead_form_field'>
-                   <button className ='delete_lead_btn' onClick={()=>this.props.deleteLead(this.props.lead)}>Delete</button>
+                   <button className ='delete_lead_btn' style={{background:'red'}} onClick={()=>this.props.deleteLead(this.props.lead)}>Delete</button>
                 </div>
              </div> 
          </div>
