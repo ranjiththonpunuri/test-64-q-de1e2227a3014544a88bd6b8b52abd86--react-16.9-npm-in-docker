@@ -1,5 +1,5 @@
 const axios = require('axios');
-const endpoint='http://54.242.57.203:4060'
+const endpoint=process.env.REACT_APP_API_URL || 'http://54.242.57.203:4060'
 export const fetchLeadsApi=()=>{
    return axios.get(endpoint+'/api/leads/?location_string=India')
 } 
