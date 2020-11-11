@@ -61,7 +61,7 @@ class LeadForm extends React.Component{
                   <button className='cancel'  onClick={this.props.openLeadPopup}>Cancel</button>
                 </div>
                 <div  className='lead_form_field'>
-                   <button className ='add_lead_btn' disabled={!Object.keys({...this.state}).every(key=>!!this.state[key])}onClick={()=>this.props.addLead({...this.state})}>Save</button>
+                   <button className ='add_lead_btn' disabled={!Object.keys({...this.state}).every(key=>!!this.state[key])} onClick={()=>this.props.addLead({...this.state})}>Save</button>
                 </div>
              </div> 
          </div>
