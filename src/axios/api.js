@@ -4,7 +4,7 @@ export const fetchLeadsApi=()=>{
    return axios.get(endpoint+'/api/leads/?location_string=India')
 } 
 export const addLeadApi=(body)=>{
-    return axios.post(endpoint+'/api/leads', body)
+    return axios.post(endpoint+'/api/leads/', body)
 } 
 export const deleteLeadApi=(id)=>{
     return axios.delete(endpoint+'/api/leads/'+id)
