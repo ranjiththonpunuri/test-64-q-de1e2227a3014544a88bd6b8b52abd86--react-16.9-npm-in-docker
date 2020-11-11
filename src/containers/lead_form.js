@@ -11,12 +11,12 @@ const Dropdown=({list,onFieldChange,selectedvalue})=>{
 class LeadForm extends React.Component{
 
     state={
-        first_name: "Sai",
-        last_name: "Sasadsa",
-        mobile: "9871028333",
-        email: "nagd@gmail.com",
-        location_type: "Country",
-        location_string: "India"
+        first_name: "",
+        last_name: "",
+        mobile: "",
+        email: "",
+        location_type: "",
+        location_string: ""
     }
 
     onFieldChange=(e)=>{
@@ -61,7 +61,7 @@ class LeadForm extends React.Component{
                   <button className='cancel'  onClick={this.props.openLeadPopup}>Cancel</button>
                 </div>
                 <div  className='lead_form_field'>
-                   <button className ='add_lead_btn' onClick={()=>this.props.addLead({...this.state})}>Save</button>
+                   <button className ='add_lead_btn' disabled={!Object.keys({...this.state}).every(key=>!!this.state[key])}onClick={()=>this.props.addLead({...this.state})}>Save</button>
                 </div>
              </div> 
          </div>
