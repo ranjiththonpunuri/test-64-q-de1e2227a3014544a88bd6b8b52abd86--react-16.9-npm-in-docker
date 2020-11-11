@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 // BACKEND ENDPOINT BASE URL
 console.log(process.env.REACT_APP_API_URL);
+process.env.REACT_APP_API_URL='http://54.242.57.203:4060'
+console.log(process.env.REACT_APP_API_URL);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
