@@ -103,8 +103,19 @@ button{
   border-spacing: 0px;
   width: 100%;
 }
-th,td{
+th{
   border: 1px solid gray;
+  height: 35px;
+  text-align: left;
+  padding-left: 3px;
+  background: black;
+  color: white;
+}
+td {
+  border: 1px solid gray;
+  height: 35px;
+  text-align: left;
+  padding-left: 3px;
 }
 .modal_header{
   text-align: left;
