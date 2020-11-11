@@ -13,15 +13,15 @@ class UpdateForm extends React.Component{
       return(<div className='update_lead_form'>
          <div className='modal_header'>Mark Communication</div>
          <div>
-              <div>
-                 <div>First Name</div>
+              <div className='update_form_field'>
+                 <div>Communication</div>
                  <textarea type='text' onChange={this.onFieldChange} name='communication'/>
              </div>
               <div>
-                <div>
+                <div className='lead_form_field'>
                   <button  className='cancel'  onClick={()=>this.props.openMarkPopup(null)}>Cancel</button>
                 </div>
-                <div>
+                <div className='lead_form_field'>
                    <button className ='update_lead_btn' onClick={()=>this.props.updateLead(this.props.lead,{...this.state})}>Save</button>
                 </div>
              </div> 

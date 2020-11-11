@@ -19,7 +19,7 @@ code {
   z-index: 1;
   border: 1px solid #f0f0f0;
   width: 45%;
-  height: 70%;
+  height: 45%;
   overflow: hidden;
   box-shadow: 0px 31px 41px #888;
   background: white;
@@ -36,7 +36,7 @@ code {
   z-index: 1;
   border: 1px solid #f0f0f0;
   width: 45%;
-  height: 70%;
+  height: 22%;
   overflow: hidden;
   box-shadow: 0px 31px 41px #888;
   background: white;
@@ -53,7 +53,7 @@ code {
   z-index: 1;
   border: 1px solid #f0f0f0;
   width: 45%;
-  height: 70%;
+  height: 44%;
   overflow: hidden;
   box-shadow: 0px 31px 41px #888;
   background: white;
@@ -85,6 +85,7 @@ button{
   display: inline-block;
   font-size: 15px;
   font-weight: bold;
+  margin-left: 3px;
   
 }
 .cancel{
@@ -96,6 +97,7 @@ button{
  display: inline-block;
  font-size: 15px;
  font-weight: bold;
+ margin-left: 73%;
 }
 .leads_table{
   border-spacing: 0px;
@@ -130,4 +132,14 @@ th,td{
   border-radius: 4px;
   border: 1px solid gray;
   padding-top: 5px;
+}
+textarea{
+      width: 98%;
+      margin-top: 20px;
+      height: 100px;
+      border-radius: 6px;
+}
+.update_form_field{
+  text-align: left;
+  padding: 10px;
 }
